@@ -4,6 +4,7 @@ import random
 from MergeSort import merge_sort
 from BubbleSort import bubble_sort
 from QuickSort import quick_sort
+from InsertionSort import insertion_sort
 
 root = Tk()
 root.title('Sorting Algorithm Visualisation')
@@ -71,6 +72,9 @@ def StartAlgorithm():
 
     elif algMenu.get() == 'Merge Sort':
         merge_sort(data, drawData, speedScale.get())
+
+    elif algMenu.get() == 'Insertion Sort':
+        insertion_sort(data, drawData, speedScale.get())
 
 #frame / base lauout
 UI_frame = Frame(root, width= 600, height=200, bg='blue')
