@@ -3,7 +3,7 @@ import time
 
 def partition(data, head, tail, drawData, timeTick):
     border = head
-    pivot = data[(head+tail)//2]
+    pivot = data[tail]
 
     drawData(data, getColorArray(len(data), head, tail, border, border))
     time.sleep(timeTick)

@@ -1,7 +1,7 @@
 from tkinter import *
 from tkinter import ttk
 import random
-# import MergeSort
+from MergeSort import merge_sort
 from BubbleSort import bubble_sort
 from QuickSort import quick_sort
 
@@ -68,6 +68,9 @@ def StartAlgorithm():
 
     elif algMenu.get() == 'Bubble Sort':
         bubble_sort(data, drawData, speedScale.get())
+
+    elif algMenu.get() == 'Merge Sort':
+        merge_sort(data, drawData, speedScale.get())
 
 #frame / base lauout
 UI_frame = Frame(root, width= 600, height=200, bg='blue')
